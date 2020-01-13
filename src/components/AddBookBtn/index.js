@@ -5,36 +5,35 @@ import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-class AddBookBtn extends React.Component{
- 
+class AddBookBtn extends React.Component {
+
     postToDB = (book) => {
-      // console.log(book);
+        // console.log(book);
         var dbBook = {
-          title: book.title,
-          authors: book.authors,
-          synopsis: book.synopsis,
-          thumbnail: book.thumbnail,
-          link: book.link
+            title: book.title,
+            authors: book.authors,
+            synopsis: book.synopsis,
+            thumbnail: book.thumbnail,
+            link: book.link
         }
-    
-    // API.saveBook(dbBook);
+
+        // API.saveBook(dbBook);
 
         axios.post("/api/books", dbBook)
-        .then( () => console.success(`You added ${book.title} to your bookshelf`))
-        .catch(err => console.log(err))
-      }
+            .then(() => console.success(`You added ${book.title} to your bookshelf`))
+            .catch(err => console.log(err))
+    }
 
     render() {
         return (
-          <div>
-          <Button type="secondary" onClick={() => 
-            {this.postToDB(this.props)}
-            }>
-            Save Book
+            <div>
+                <Button type="secondary" onClick={() => { this.postToDB(this.props) }
+                }>
+                    Save Book!
         </Button>
-        </div>
+            </div>
         );
     }
-  }
+}
 
-  export default AddBookBtn;
+export default AddBookBtn;
