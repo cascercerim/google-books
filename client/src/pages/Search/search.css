@@ -1,0 +1,14 @@
+.btn{
+    background-color: #e74944;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.form-control{
+width: 70%;
+border-radius: 20px;
+border: slategrey 2px solid;
+}

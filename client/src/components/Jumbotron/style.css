@@ -1,0 +1,17 @@
+  
+div.jumbotron{
+    background-image: url('../img/book1.jpg');
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+
+}
+
+a{
+    color: whitesmoke;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 700;
+}
