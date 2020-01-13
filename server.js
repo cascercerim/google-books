@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/googlebooks");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://cascercerim:Kaylam9!@ds263248.mlab.com:63248/heroku_r2hx023g");
 console.log('MongoDB connected');
 
 
