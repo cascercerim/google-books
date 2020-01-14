@@ -18,7 +18,7 @@ class Saved extends Component {
     }
 
     getBooks = () => {
-        axios.get("/api/books")
+        axios.get("api/books")
             .then(res => {
                 this.setState({ savedBooks: res.data })
             })

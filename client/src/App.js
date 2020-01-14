@@ -15,13 +15,14 @@ class App extends Component {
           <Container>
             <Switch>
               <Route exact path="/" component={Search} />
-              <Route path="/shelf" component={Saved} />
+              <Route path="/bookshelf" component={Saved} />
               <Route exact path="/books/:id" component={null} />
               <Route component={null} />
             </Switch>
           </Container>
-        </Router>
+          </Router>
       </div>
+      
     );
   }
 }

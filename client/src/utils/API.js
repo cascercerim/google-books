@@ -6,7 +6,7 @@ export default {
     },
 
     getBook: function (id) {
-        return axios.get("/api/books" + id);
+        return axios.get("/api/books/" + id);
     },
 
     deleteBook: function (id) {
