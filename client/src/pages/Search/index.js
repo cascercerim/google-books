@@ -50,7 +50,7 @@ class Search extends Component {
                         <input id="book" className="form-control form-control-lg" autoComplete="off" type="text" name="query" onChange={this.handleInput} />
                         <button type="submit" className="btn" onClick={this.searchGBooks} >
                             Search for Books
-          </button>
+        </button>
 
 
                         {(this.state.books && this.state.books.length > 0) ?

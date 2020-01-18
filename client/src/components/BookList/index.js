@@ -24,7 +24,7 @@ export class BookListItem extends React.Component {
                                 <Thumbnail src={this.props.thumbnail} />
                             </Col>
                             <Col size="xs-8 sm-9">
-                                <h3>{this.props.title}<span><h5>{this.props.authors.join(", ")}</h5></span></h3>
+                                <h3>{this.props.title}<span><h5>{this.props.authors}</h5></span></h3>
                                 <p>
                                     {this.props.synopsis}
                                 </p>
