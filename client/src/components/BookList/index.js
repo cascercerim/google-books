@@ -34,7 +34,7 @@ export class BookListItem extends React.Component {
                                     rel="noopener noreferrer"
                                 >
                                     Get book!
-              </a>
+            </a>
                             </Col>
                         </Row>
                     </Container>

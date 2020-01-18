@@ -20,7 +20,7 @@ class AddBookBtn extends React.Component {
         // API.saveBook(dbBook);
 
         axios.post("/api/books", dbBook)
-            .then(() => console.success(`You added ${book.title} to your bookshelf`))
+            .then(() => alert(`You added ${book.title} to your bookshelf`))
             .catch(err => console.log(err))
     }
 
